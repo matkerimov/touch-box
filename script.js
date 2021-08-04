@@ -1,15 +1,18 @@
 
-const changeColor = document.querySelectorAll( ".boxes div")
+const changeColor = document.querySelectorAll( ".background")
+const colors = ["color", "blue", "green", "red"]
 
-function colorGenerator() {
-    changeColor.forEach(el => {
-        el.addEventListener("click", (event) =>{
-            event.target.classList.add("color")
+    changeColor.forEach((el )=> {
+        el.addEventListener("click", () =>{
+            const random = Math.floor(Math.random() * 4)
+            changeColor.forEach((el) =>{
+                el.removeAttribute("class")
+            })
+            el.classList.add(colors[random])
         })
     })
-}
 
-colorGenerator()
+
 
 // changeColor.onclick = function () {
 //
