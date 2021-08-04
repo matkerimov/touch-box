@@ -1,0 +1,12 @@
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 100vh;
+}
+.boxes div{
+    border: 2px solid #000;
+
+}
+.color{
+    background: #485563;
+}
